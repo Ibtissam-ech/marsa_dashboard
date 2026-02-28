@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/camera_management/static/css/main.b457db21.css",
+    "main.js": "/camera_management/static/js/main.a1cb5696.js",
+    "static/js/453.0f45c59f.chunk.js": "/camera_management/static/js/453.0f45c59f.chunk.js",
+    "index.html": "/camera_management/index.html",
+    "main.b457db21.css.map": "/camera_management/static/css/main.b457db21.css.map",
+    "main.a1cb5696.js.map": "/camera_management/static/js/main.a1cb5696.js.map",
+    "453.0f45c59f.chunk.js.map": "/camera_management/static/js/453.0f45c59f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b457db21.css",
+    "static/js/main.a1cb5696.js"
+  ]
+}
