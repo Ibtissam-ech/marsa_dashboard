@@ -1,6 +1,6 @@
 {
   "name": "marsa-maroc-dashboard",
-  "homepage": "https://ibtissam-ech.github.io/marsa_dashboard",
+ "homepage": "https://ibtissam-ech.github.io/marsa_dashboard",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
