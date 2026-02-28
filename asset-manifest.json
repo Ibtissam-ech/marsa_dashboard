@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/marsa_dashboard/static/css/main.b457db21.css",
-    "main.js": "/marsa_dashboard/static/js/main.3bd6ce38.js",
+    "main.js": "/marsa_dashboard/static/js/main.f81092a3.js",
     "index.html": "/marsa_dashboard/index.html",
     "main.b457db21.css.map": "/marsa_dashboard/static/css/main.b457db21.css.map",
-    "main.3bd6ce38.js.map": "/marsa_dashboard/static/js/main.3bd6ce38.js.map"
+    "main.f81092a3.js.map": "/marsa_dashboard/static/js/main.f81092a3.js.map"
   },
   "entrypoints": [
     "static/css/main.b457db21.css",
-    "static/js/main.3bd6ce38.js"
+    "static/js/main.f81092a3.js"
   ]
 }
