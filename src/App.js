@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import DashboardPage from './pages/DashboardPage';
 import LiveViewPage from './pages/LiveViewPage';
 import PlaybackPage from './pages/PlaybackPage';
@@ -11,7 +11,7 @@ import SettingsPage from './pages/SettingsPage';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename="/marsa_dashboard">
       <Routes>
         <Route path="/" element={<DashboardPage />} />
         <Route path="/live" element={<LiveViewPage />} />
@@ -22,7 +22,7 @@ function App() {
         <Route path="/reports" element={<ReportsPage />} />
         <Route path="/settings" element={<SettingsPage />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 

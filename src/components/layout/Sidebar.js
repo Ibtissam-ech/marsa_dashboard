@@ -34,7 +34,7 @@ const Sidebar = () => {
       {/* LOGO MARSAMAROC SEULEMENT */}
       <div className="h-20 flex items-center justify-center border-b border-gray-100">
         <img 
-          src="/logo-marsamaroc.png" 
+          src={`${process.env.PUBLIC_URL}/logo-marsamaroc.png`}
           alt="Marsa Maroc" 
           className={`transition-all duration-300 ${collapsed ? 'h-8' : 'h-12'}`} 
         />
