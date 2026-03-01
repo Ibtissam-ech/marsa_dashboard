@@ -71,6 +71,12 @@ export const getDashboardStats = () => {
   const cameras = getCameras();
   const alerts = getAlerts();
   
+  // Générer des données d'historique de température sur 24h
+  const temperatureHistory = Array.from({ length: 24 }, (_, i) => ({
+    hour: `${i}h`,
+    temperature: 45 + Math.floor(Math.random() * 35) // Entre 45 et 80°C
+  }));
+  
   return {
     totalCameras: cameras.length,
     onlineCameras: cameras.filter(c => c.online).length,
@@ -81,10 +87,7 @@ export const getDashboardStats = () => {
     warningAlerts: alerts.filter(a => a.severity === 'warning' && !a.acknowledged).length,
     avgTemperature: Math.round(cameras.reduce((acc, c) => acc + c.temperature, 0) / cameras.length),
     
-    temperatureHistory: Array.from({ length: 24 }, (_, i) => ({
-      hour: `${i}h`,
-      temperature: 45 + Math.floor(Math.random() * 30)
-    })),
+    temperatureHistory: temperatureHistory,  // ← AJOUTÉ
     
     zoneStats: getZones().map(zone => ({
       name: zone.name,
@@ -93,6 +96,7 @@ export const getDashboardStats = () => {
     }))
   };
 };
+
 // DONNÉES HIÉRARCHIQUES COMPLÈTES
 export const getFullHierarchy = () => {
   return [
